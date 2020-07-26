@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Shop</title>
+</head>
+<body>
+<!-- Sve forme prebaciti u nezavisne html stranice i/ili servlete -->
+	Register User:
+	<form action="Registracija" method="get">
+		name<input type="text" name="ime" /><br />
+		sifra<input type="text" name="lozinka" /><br />
+		<input type="submit" value="registerUser" /><br />  
+	</form>
+	<hr />
+	Find User:
+	<form action="FindUser" method="get">
+		user<input type="text" name="findUserName" /><br /> <input
+			type="submit" value="findUser" /><br />
+	</form>
+	<hr />
+	Find Product:
+	<form action="FindProduct" method="get">
+	product<input type="text" name="findProductName" /><br />
+	<input type="submit" value="findProduct" /><br />
+	</form>
+	<hr />
+	Delete User:
+	<form action="DeleteUserServlet" method="get">
+		ime<input type="text" name="username" /><br /> <input
+			type="submit" value="deleteUser" /><br />
+	</form>
+	<hr />
+	UpdateUser
+	<form action="UpdateUserServlet" method="get">
+		Old<input type="text" name="orginalIme" /><br />
+		Novo ime<input type="text" name="updateIme" /><br />
+		Nova sifra<input type="text" name="updatePassword" /><br /> 
+		<input type="submit" value="updateUser" /><br /> 
+	</form>
+	<hr />
+	List users:
+	<br />
+	<a href="PrikazUsera">ListAllUsers</a>
+	<hr />
+	Web shop:<br/>
+	<a href="WebShopServlet">web shop</a>
+	<hr/>
+	Shopping Cart:<br/>
+	<a href="ShoppingCartServlet">korpa</a>
+	<hr/>
+<!-- Dodati neophodne forme za ackije nad proizvodom -->
+</body>
+</html>
